@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>FarmacoEdu | Fundamentos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-dark">
+  <header class="app-header">
+    <div class="logo">
+      <span class="logo-mark">FE</span>
+      <span class="logo-text">FarmacoEdu</span>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="app-nav">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="fundamentos.html" class="nav-link active">Fundamentos</a>
+      <a href="clases.html" class="nav-link">Clases de fármacos</a>
+    </nav>
+  </header>
+
+  <main class="app-main article-layout">
+    <aside class="article-toc">
+      <h2>Temario</h2>
+      <ul>
+        <li><a href="#farmacocinetica">Farmacocinética (ADME/LADME)</a></li>
+        <li><a href="#farmacodinamica">Farmacodinámica y receptores</a></li>
+        <li><a href="#seguridad">Seguridad del paciente</a></li>
+        <li><a href="#fuentes">Fuentes de información</a></li>
+      </ul>
+    </aside>
+
+    <article class="article-content">
+      <section id="farmacocinetica">
+        <h1>Fundamentos de farmacocinética</h1>
+        <p>
+          La farmacocinética estudia cómo el organismo afecta al fármaco a través de
+          procesos como absorción, distribución, metabolismo y excreción (ADME o LADME
+          cuando se incluye la liberación).[web:2][web:3][web:14]
+        </p>
+        <div class="concept-grid">
+          <div class="concept-card">
+            <h3>Absorción</h3>
+            <p>
+              Movimiento del fármaco desde el lugar de administración hasta la circulación
+              sistémica, influido por vía, pH, perfusión y forma farmacéutica.
+            </p>
+          </div>
+          <div class="concept-card">
+            <h3>Distribución</h3>
+            <p>
+              Reparto del fármaco por los compartimentos corporales, condicionado por
+              unión a proteínas plasmáticas, barreras biológicas y liposolubilidad.
+            </p>
+          </div>
+          <div class="concept-card">
+            <h3>Metabolismo</h3>
+            <p>
+              Transformación química (principalmente hepática) que genera metabolitos
+              activos o inactivos y modifica la vida media del fármaco.
+            </p>
+          </div>
+          <div class="concept-card">
+            <h3>Excreción</h3>
+            <p>
+              Eliminación del fármaco y sus metabolitos (sobre todo por riñón y bilis),
+              clave para ajustar dosis en insuficiencia renal o hepática.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="farmacodinamica">
+        <h2>Farmacodinámica y receptores</h2>
+        <p>
+          La farmacodinámica describe cómo los fármacos producen efectos mediante la
+          unión a receptores, canales iónicos, enzimas u otras dianas biológicas.[web:3][web:5]
+        </p>
+        <ul class="bullet-list">
+          <li>Agonistas: activan el receptor y miman al ligando endógeno.</li>
+          <li>Antagonistas: bloquean el receptor e impiden la acción del ligando.</li>
+          <li>
+            Relación dosis–respuesta: describe cómo aumenta el efecto al incrementar la dosis
+            hasta alcanzar un efecto máximo.
+          </li>
+          <li>
+            Potencia y eficacia: conceptos clave para comparar fármacos dentro de la misma clase.
+          </li>
+        </ul>
+      </section>
+
+      <section id="seguridad">
+        <h2>Seguridad, RAM y margen terapéutico</h2>
+        <p>
+          La seguridad del uso de medicamentos incluye la identificación de reacciones
+          adversas, interacciones y errores de medicación, así como la valoración del
+          margen terapéutico de cada fármaco.[web:5][web:17]
+        </p>
+        <p>
+          En la práctica clínica se emplean protocolos, listas de verificación y sistemas de
+          notificación para minimizar los riesgos y mejorar la seguridad del paciente.
+        </p>
+      </section>
+
+      <section id="fuentes">
+        <h2>Fuentes recomendadas</h2>
+        <ul class="resource-list">
+          <li><a href="https://medlineplus.gov/druginformation.html" target="_blank">MedlinePlus: medicamentos y suplementos</a></li>
+          <li><a href="https://www.mayoclinic.org/drugs-supplements" target="_blank">Mayo Clinic: Drugs & Supplements</a></li>
+          <li><a href="https://www.fda.gov/drugs" target="_blank">FDA: información sobre medicamentos</a></li>
+          <li><a href="https://druginfo.nlm.nih.gov" target="_blank">NLM Drug Information Portal</a></li>
+        </ul>
+        <p class="disclaimer">
+          Verifica siempre la información en estas y otras fuentes oficiales antes de tomar decisiones clínicas.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="app-footer">
+    <small>FarmacoEdu · Módulo de fundamentos.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

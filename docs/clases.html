@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>FarmacoEdu | Clases de fármacos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-dark">
+  <header class="app-header">
+    <div class="logo">
+      <span class="logo-mark">FE</span>
+      <span class="logo-text">FarmacoEdu</span>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="app-nav">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="fundamentos.html" class="nav-link">Fundamentos</a>
+      <a href="clases.html" class="nav-link active">Clases de fármacos</a>
+    </nav>
+  </header>
+
+  <main class="app-main">
+    <section class="section">
+      <header class="section-header">
+        <h1>Clases de fármacos</h1>
+        <p>
+          Explora algunas clases terapéuticas frecuentes, su mecanismo general
+          y ejemplos representativos. La información es descriptiva y no incluye dosis.
+        </p>
+      </header>
+
+      <div class="card-grid" data-filter-list>
+                <!-- Endocrino: antidiabéticos orales -->
+        <article class="drug-card" data-name="Antidiabéticos orales" data-example="metformina glibenclamida">
+          <h2>Antidiabéticos orales (no insulina)</h2>
+          <p class="chip">Endocrino / Metabolismo</p>
+          <p class="drug-mechanism">
+            Incluyen fármacos que mejoran la sensibilidad a la insulina o reducen la producción hepática de glucosa, ayudando al control glucémico en diabetes tipo 2.
+          </p>
+          <p class="drug-examples">
+            Ejemplos: metformina, sulfonilureas, inhibidores SGLT2.
+          </p>
+          <button class="btn small" data-open-modal="antidiabeticos-orales">
+            Ver más
+          </button>
+        </article>
+
+        <!-- Respiratorio: broncodilatadores beta2 -->
+        <article class="drug-card" data-name="Broncodilatadores beta-2" data-example="salbutamol salmeterol">
+          <h2>Broncodilatadores β2</h2>
+          <p class="chip">Respiratorio</p>
+          <p class="drug-mechanism">
+            Estimulan receptores β2 del músculo liso bronquial, produciendo broncodilatación rápida o prolongada según la molécula.
+          </p>
+          <p class="drug-examples">
+            Ejemplos: salbutamol, formoterol, salmeterol.
+          </p>
+          <button class="btn small" data-open-modal="beta2">
+            Ver más
+          </button>
+        </article>
+
+        <!-- Anti-infecciosos: penicilinas -->
+        <article class="drug-card" data-name="Penicilinas" data-example="amoxicilina penicilina">
+          <h2>Penicilinas (β-lactámicos)</h2>
+          <p class="chip">Anti-infecciosos</p>
+          <p class="drug-mechanism">
+            Antibióticos β-lactámicos que interfieren en la síntesis de la pared bacteriana, con amplio uso en infecciones comunitarias seleccionadas.
+          </p>
+          <p class="drug-examples">
+            Ejemplos: penicilina G, amoxicilina, ampicilina.
+          </p>
+          <button class="btn small" data-open-modal="penicilinas">
+            Ver más
+          </button>
+        </article>
+
+        <!-- Sistema nervioso: benzodiacepinas -->
+        <article class="drug-card" data-name="Benzodiacepinas" data-example="diazepam lorazepam">
+          <h2>Benzodiacepinas</h2>
+          <p class="chip">Sistema nervioso</p>
+          <p class="drug-mechanism">
+            Potencian la acción del GABA en el sistema nervioso central, con efectos ansiolíticos, sedantes y anticonvulsivantes.
+          </p>
+          <p class="drug-examples">
+            Ejemplos: diazepam, lorazepam, alprazolam.
+          </p>
+          <button class="btn small" data-open-modal="benzodiacepinas">
+            Ver más
+          </button>
+        </article>
+
+        <!-- Sistema nervioso: ISRS -->
+        <article class="drug-card" data-name="ISRS" data-example="sertralina fluoxetina">
+          <h2>Antidepresivos ISRS</h2>
+          <p class="chip">Psiquiatría</p>
+          <p class="drug-mechanism">
+            Inhiben de forma selectiva la recaptación de serotonina, aumentando su disponibilidad sin un marcado efecto sedante.
+          </p>
+          <p class="drug-examples">
+            Ejemplos: sertralina, fluoxetina, citalopram.
+          </p>
+          <button class="btn small" data-open-modal="isrs">
+            Ver más
+          </button>
+        </article>
+
+        <article class="drug-card" data-name="Beta-bloqueantes" data-example="metoprolol propranolol">
+          <h2>Beta-bloqueantes</h2>
+          <p class="chip">Cardiovascular</p>
+          <p class="drug-mechanism">
+            Bloquean receptores beta-adrenérgicos, reduciendo frecuencia cardiaca y consumo
+            de oxígeno miocárdico.
+          </p>
+          <p class="drug-examples">
+            Ejemplos: metoprolol, propranolol, atenolol.
+          </p>
+          <button class="btn small" data-open-modal="beta-bloqueantes">
+            Ver más
+          </button>
+        </article>
+
+        <article class="drug-card" data-name="AINE" data-example="ibuprofeno naproxeno">
+          <h2>AINE (antiinflamatorios no esteroideos)</h2>
+          <p class="chip">Analgesia / Inflamación</p>
+          <p class="drug-mechanism">
+            Inhiben enzimas ciclooxigenasa y disminuyen la síntesis de prostaglandinas,
+            reduciendo inflamación, dolor y fiebre.
+          </p>
+          <p class="drug-examples">
+            Ejemplos: ibuprofeno, naproxeno, diclofenaco.
+          </p>
+          <button class="btn small" data-open-modal="aine">
+            Ver más
+          </button>
+        </article>
+
+        <article class="drug-card" data-name="Inhibidores de la ECA" data-example="enalapril lisinopril">
+          <h2>Inhibidores de la ECA</h2>
+          <p class="chip">Cardiovascular</p>
+          <p class="drug-mechanism">
+            Inhiben la enzima convertidora de angiotensina, disminuyendo la formación de
+            angiotensina II y la vasoconstricción.
+          </p>
+          <p class="drug-examples">
+            Ejemplos: enalapril, lisinopril, ramipril.
+          </p>
+          <button class="btn small" data-open-modal="ieca">
+            Ver más
+          </button>
+        </article>
+
+        <article class="drug-card" data-name="Estatinas" data-example="atorvastatina simvastatina">
+          <h2>Estatinas</h2>
+          <p class="chip">Lípidos</p>
+          <p class="drug-mechanism">
+            Inhiben la HMG-CoA reductasa, reduciendo la síntesis hepática de colesterol
+            y el LDL plasmático.
+          </p>
+          <p class="drug-examples">
+            Ejemplos: atorvastatina, simvastatina, rosuvastatina.
+          </p>
+          <button class="btn small" data-open-modal="estatinas">
+            Ver más
+          </button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal genérico -->
+  <div class="modal" id="modal">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" aria-label="Cerrar" data-close-modal>×</button>
+      <div class="modal-content" id="modal-content">
+        <!-- Se llena desde app.js -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="app-footer">
+    <small>
+      Información orientada a la formación. Verifica siempre en fuentes oficiales antes de prescribir.
+    </small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

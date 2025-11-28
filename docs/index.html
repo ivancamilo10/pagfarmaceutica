@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>FarmacoEdu | Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-dark">
+  <header class="app-header">
+    <div class="logo">
+      <span class="logo-mark">V</span>
+      <span class="logo-text">FarmacoEdu</span>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      ☰
+    </button>
+    <nav class="app-nav">
+      <a href="index.html" class="nav-link active">Inicio</a>
+      <a href="fundamentos.html" class="nav-link">Fundamentos</a>
+      <a href="clases.html" class="nav-link">Clases de fármacos</a>
+    </nav>
+  </header>
+
+  <main class="app-main">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Aprende farmacología de forma estructurada</h1>
+        <p>
+          Explora conceptos clave, clases de fármacos y recursos fiables para
+          reforzar tu formación en ciencias de la salud.
+        </p>
+        <div class="hero-actions">
+          <a href="fundamentos.html" class="btn primary">Empezar por los fundamentos</a>
+          <a href="clases.html" class="btn ghost">Ver clases de fármacos</a>
+        </div>
+        <p class="hero-note">
+          Uso exclusivo educativo. No sustituye guías clínicas ni recomendaciones médicas.
+        </p>
+      </div>
+      <div class="hero-panel">
+        <div class="stat-card">
+          <span class="stat-label">Bloques de estudio</span>
+          <span class="stat-value">3</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Clases de fármacos</span>
+          <span class="stat-value">10+</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-header">
+        <h2>Buscar clase de fármacos</h2>
+        <p>Filtra por nombre de clase o ejemplo de fármaco.</p>
+      </header>
+      <div class="search-bar">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Ej: beta-bloqueantes, AINE, estatinas..."
+          autocomplete="off"
+        />
+      </div>
+      <div class="card-grid" id="search-results">
+        <!-- Se rellena dinámicamente desde app.js -->
+      </div>
+    </section>
+
+    <section class="section section-grid">
+      <article class="info-card">
+        <h3>Fundamentos de farmacocinética</h3>
+        <p>
+          Revisa cómo el cuerpo maneja el fármaco: absorción, distribución,
+          metabolismo y excreción (ADME/LADME).
+        </p>
+        <a href="fundamentos.html#farmacocinetica" class="card-link">
+          Ver módulo →
+        </a>
+      </article>
+      <article class="info-card">
+        <h3>Farmacodinámica y receptores</h3>
+        <p>
+          Entiende cómo los fármacos interactúan con receptores, canales y enzimas
+          para producir efectos terapéuticos y adversos.
+        </p>
+        <a href="fundamentos.html#farmacodinamica" class="card-link">
+          Ver módulo →
+        </a>
+      </article>
+      <article class="info-card">
+        <h3>Seguridad y errores de medicación</h3>
+        <p>
+          Conceptos clave sobre RAM, margen terapéutico y estrategias de uso seguro.
+        </p>
+        <a href="fundamentos.html#seguridad" class="card-link">
+          Ver módulo →
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>
+      FarmacoEdu · Recursos educativos. Consulta siempre fuentes oficiales para decisiones clínicas.
+    </small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
